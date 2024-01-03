@@ -4,6 +4,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import random
 import sqlite3 as db
 
+# this code is shaky
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -61,7 +63,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "SwiftPass"))
         self.label.setText(_translate("MainWindow", " Swift Pass"))
-        self.lineEdit.setToolTip(_translate("MainWindow", "Enter Name of Account for password. Eg. Facebook"))
+        self.lineEdit.setToolTip(_translate("MainWindow", "Enter Name of Account for password. Eg. Twitter(x)"))
         self.lineEdit.setPlaceholderText(_translate("MainWindow", "Account Name"))
         self.textEdit.setToolTip(_translate("MainWindow", "Your SwiftPass Appears Here and ge copied to your clipboard"))
         self.textEdit.setPlaceholderText(_translate("MainWindow", "Your SwiftPass"))
